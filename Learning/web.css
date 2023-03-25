@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
+body {
+    background-color: dimgray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 600;
+}
+
+.main {
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #f0b865;
+    width: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    font-size: 30px;
+}
+
+.home a img{
+    padding-top: 7px;
+    width: 150px;
+    height: 150px;
+}
+
+.home a img:hover {
+    transform: scale(0.9);
+}
+
+.home a {
+    text-decoration: none;
+    color: rgb(249, 255, 255);
+}
+
+.home :hover {
+    color: rgb(24, 158, 192);
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li :hover {
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+nav ul li a span{
+    font-size: 30px;
+}
+
+.konten .gambar img {
+    width: 40%;
+    float: right;
+    /* margin-top: -80px; */
+    position: relative;
+    bottom: 170px;
+    margin-right: 127px;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img {
+    width: 30%;
+    height: 30%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer {
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 23px;
+    margin-top: 20px;
+}

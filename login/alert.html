@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Daftar</title></head>
+<body> 
+
+<form id="form" method="GET">
+<!-- letakkan field di sini -->
+<fieldset>
+<legend><h1>Halaman login</h1></legend>
+<table>    
+
+    <tr>
+        <td>username</td>
+        <td>:</td>
+        <td><input type="text" id="user"/></td>
+    </tr>
+
+    <tr>
+        <td>password</td>
+        <td>:</td>
+        <td><input type="name" id="pw"  required/><br /></td>
+    </tr>    
+
+    
+    <tr>
+        <td><input type="submit" value="login"/></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+</fieldset>
+
+</form>
+<p>belum punya akun ? <a href="../daftar/daftar.html">daftar</a></p>
+</body>
+<script src="daftar.js" ></script>
+<script>
+	const form = document.getElementById("form");
+const email = document.getElementById("user");
+const pass = document.getElementById("pw");
+   
+form.addEventListener("submit", function(e){
+e.preventDefault();
+
+const loc_email = localStorage.getItem("username");
+const loc_pass = localStorage.getItem("password");
+
+if(email.value == loc_email && pass.value == loc_pass){
+    alert("berhasil login");
+    window.location.href = "home.html";
+} else {
+    alert("gagal login");
+}
+});
+</script>
+</html>

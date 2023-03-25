@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>SELAMAT DATANG KAK <span id="nm"></span></h1>
+
+    <h2><a href="alert.html">logout</a></h2>
+</body>
+<script>
+    const tampil = document.getElementById("nm");
+    const nam = localStorage.getItem("nama");
+    tampil.innerHTML = nam;
+
+    const t = document.getElementById("dt");
+    const n = localStorage.getItem("nama");
+    t.innerHTML = n;
+</script>
+</html>
